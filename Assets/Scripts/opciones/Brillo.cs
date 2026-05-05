@@ -6,20 +6,19 @@ public class Brillo : MonoBehaviour
 {
     public Image Panel_Brillo;
     public Slider Slider_Brillo;
-    public GameObject Text_Brillo;
+    public GameObject Text_Imagen;
     public GameObject Text_Volumen;
-    
-
-
+    public GameObject Text_Jugabilidad;
+    public GameObject Text_Idiomas;
 
 
     public void Pantalla_BrilloEntra(GameObject panelAActivar)
     {
-        Text_Volumen.SetActive(false);
-        Text_Brillo.SetActive(false); 
+        Text_Imagen.SetActive(false); 
 
         Text_Volumen.SetActive(true);
-       
+        Text_Jugabilidad.SetActive(true);
+        Text_Idiomas.SetActive(true);
     }
 
     public GameObject[] todosLosPaneles; 

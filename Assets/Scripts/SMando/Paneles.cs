@@ -20,7 +20,8 @@ public class Paneles : MonoBehaviour
     [Header("InputJugadorUno")]
     public TMP_InputField inputJugadorUno;
     public TMP_Text textoInputNombreUsuario;
-
+    public GameObject Image_Degradado;
+    
 
 
     public void Start()
@@ -85,6 +86,25 @@ public class Paneles : MonoBehaviour
                 break; 
         }
     }
+    public void Pantalla_BrilloEntra(GameObject panelAActivar)
+    {
+        Image_Degradado.SetActive(false);
+       
+
+
+    }
+ 
+    public GameObject[] todosLosPaneles;
+
+    public void AbrirPanelEspecifico(int indice)
+    {
+        for (int i = 0; i < todosLosPaneles.Length; i++)
+        {
+
+            todosLosPaneles[i].SetActive(i == indice);
+        }
+    }
+
     public void LeerInputJugadorUno()
     {
         string texto = inputJugadorUno.text;

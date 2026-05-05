@@ -2163,12 +2163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 1822900885}
+    m_SelectOnRight: {fileID: 1205445706}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2193,7 +2193,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153219616}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 186313000}
+        m_TargetAssemblyTypeName: Brillo, Assembly-CSharp
+        m_MethodName: AbrirPanelEspecifico
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &153219616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2791,11 +2803,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Brillo
   Panel_Brillo: {fileID: 924398993}
   Slider_Brillo: {fileID: 882949517}
-  Text_Brillo: {fileID: 373269650}
+  Text_Imagen: {fileID: 373269650}
   Text_Volumen: {fileID: 1205445704}
+  Text_Jugabilidad: {fileID: 1822900883}
+  Text_Idiomas: {fileID: 153219613}
   todosLosPaneles:
   - {fileID: 670472207}
   - {fileID: 1613736586}
+  - {fileID: 1955767270}
+  - {fileID: 1765620762}
 --- !u!1 &201201455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,8 +4091,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2145612279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5653,7 +5669,7 @@ MonoBehaviour:
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 1205445706}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1822900885}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5923,7 +5939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MANDO
+  m_text: JUGABILIDAD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 17775fa3fb8261d499596e4b7d93e2d5, type: 2}
   m_sharedMaterial: {fileID: 3746014700792296156, guid: 17775fa3fb8261d499596e4b7d93e2d5, type: 2}
@@ -8150,7 +8166,7 @@ RectTransform:
   m_Father: {fileID: 1088513268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8666,7 +8682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &670472208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11891,7 +11907,7 @@ RectTransform:
   m_Father: {fileID: 1589224055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12411,7 +12427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1106, y: -364}
+  m_AnchoredPosition: {x: -1106, y: -264}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1071380387
@@ -15121,7 +15137,7 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 153219615}
     m_SelectOnRight: {fileID: 373269652}
   m_Transition: 1
   m_Colors:
@@ -15231,7 +15247,7 @@ RectTransform:
   m_Father: {fileID: 352037129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20480,7 +20496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1765620763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21057,12 +21073,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 373269652}
+    m_SelectOnRight: {fileID: 153219615}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -21087,7 +21103,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1822900886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 186313000}
+        m_TargetAssemblyTypeName: Brillo, Assembly-CSharp
+        m_MethodName: AbrirPanelEspecifico
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1822900886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22640,7 +22668,7 @@ RectTransform:
   m_Father: {fileID: 757617234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24112,7 +24140,7 @@ RectTransform:
   m_Father: {fileID: 910117060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
