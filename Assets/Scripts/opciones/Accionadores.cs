@@ -12,11 +12,6 @@ public class Accionadores : MonoBehaviour
     [Header("Toggle")]
     public TMP_Text textoValorToggle;
 
-    //Con Public hacemos la variable visible para desde afuera del script, con TMP_InputField le señalo que el componente es de tipo Imputy con con tmp_text sirve parapara referenciar a un componente textmeshpro  
-    [Header("InputJugadorUno")]
-    public TMP_InputField inputJugadorUno;
-    public TMP_Text textoInputNombreUsuario;
-
     //Con Public hacemos la variable visible para desde afuera del script, con  Slider le señalo que el componente es de tipo  Slider y con con tmp_text sirve parapara referenciar a un componente textmeshpro  
     [Header("sliderMusica")]
     public Slider sliderMusica;
@@ -64,11 +59,7 @@ public void leerToggle(Toggle toggle)
     }
 
     //Aqui vinculamos el textmeshpro con el Input field, haciendo que el texto escrito en el imput field se proyecte en el textmeshpro vinculado; lo use para que el ususaio ponga su nombre en su perfil de guardado
-    public void LeerInputJugadorUno()
-    {
-        string texto = inputJugadorUno.text;
-        textoInputNombreUsuario.text = texto;
-    }
+   
 
     // Aqui vinculamos el textmeshpro con el slider, haciendo que el valor del movimiento del slider  se proyecte en el textmeshpro vinculado
     public void LeerImputMusica ()

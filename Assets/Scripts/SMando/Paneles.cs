@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,21 +11,29 @@ public class Paneles : MonoBehaviour
 
     // int idanimacion sirve para grabar como un numero entero en el menu para saber cual es el que esta abierto y que menu debe cerrar. Las para generar casillas para cada animación.
     int idAnimacion;
-    public Animator menuMando;
-    public Animator menuIdioma;
-    public Animator menuSalir;
+
     public Animator menuTienda;
+    public Animator menuSalir;
     public Animator menuCargar;
     internal Color color;
     public Image Panel_Brillo;
+    [Header("InputJugadorUno")]
+    public TMP_InputField inputJugadorUno;
+    public TMP_Text textoInputNombreUsuario;
+
 
 
     public void Start()
     {
         float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 100f);
         CambiarBrillo(brilloGuardado);
-    }
+        string nombreGuardado = PlayerPrefs.GetString("NombreJugador", "Jugador");
 
+        textoInputNombreUsuario.text = nombreGuardado;
+        inputJugadorUno.text = nombreGuardado;
+    
+    }
+    
     //Esto hace que el metodo aparesca en Unity
     public void BotonCambiaAnimacion(int id)
     {
@@ -49,21 +58,15 @@ public class Paneles : MonoBehaviour
         switch (idAnimacion)
         {
             case 1:
-                menuMando.Play("MenuMandoInicio");
-                break;
-            case 2:
-                menuIdioma.Play("IdiomaAnimacionEntrar");
-                break;
-            case 3:
-                menuSalir.Play("MenuPregunta");
-                break;
-            case 4:
-
                 menuTienda.Play("MenuTienda");
                 break;
-            case 5:
-                menuCargar.Play("MenuCargaEntra");
+            case 2:
+
+                menuSalir.Play("MenuPregunta");
                 break;
+            case 3:
+                menuCargar.Play("MenuCargaEntra");
+                break;         
         }
     }
     public void SalirMenu()
@@ -71,25 +74,25 @@ public class Paneles : MonoBehaviour
         switch (idAnimacion)
         {
             case 1:
-                menuMando.Play("MenuMandoSalir");
-                break;
-            case 2:
-                menuIdioma.Play("MenuIdiomaSalida");
-                break;
-            case 3:
-                menuSalir.Play("MenuPreguntaSalir");
-                break;
-            case 4:
                 menuTienda.Play("MenuTiendaSalir");
                 break;
-            case 5:
-                menuCargar.Play("MenuCargarSalir");
+            case 2:
+                menuSalir.Play("MenuPreguntaSalir");
                 break;
+            case 3:
 
-
+                menuCargar.Play("MenuCargarSalir");
+                break; 
         }
     }
-       
+    public void LeerInputJugadorUno()
+    {
+        string texto = inputJugadorUno.text;
+        textoInputNombreUsuario.text = texto;
+        PlayerPrefs.SetString("NombreJugador", texto);
+        PlayerPrefs.Save();
+    }
+
     //salir del juego
     public void Update()
     {
@@ -107,6 +110,7 @@ public class Paneles : MonoBehaviour
         Application.Quit();
 #endif
     }
+
 
 }
 

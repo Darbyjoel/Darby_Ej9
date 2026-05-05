@@ -8,16 +8,18 @@ public class Brillo : MonoBehaviour
     public Slider Slider_Brillo;
     public GameObject Text_Brillo;
     public GameObject Text_Volumen;
-
-
-
     
+
+
+
+
     public void Pantalla_BrilloEntra(GameObject panelAActivar)
     {
         Text_Volumen.SetActive(false);
         Text_Brillo.SetActive(false); 
 
         Text_Volumen.SetActive(true);
+       
     }
 
     public GameObject[] todosLosPaneles; 
