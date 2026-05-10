@@ -16,17 +16,20 @@ public class Brillo : MonoBehaviour
 
     public GameObject[] todosLosPaneles;
     public Toggle toggle;
+
+
+    [HeaderAttribute("Cambio de resolución")]
     public TMP_Dropdown resolucionesDropDown;
-    Resolution[] resoluciones;
+  
 
     public void Pantalla_BrilloEntra(GameObject panelAActivar)
     {
-        Text_Imagen.SetActive(false); 
+        Text_Imagen.SetActive(false);
 
         Text_Volumen.SetActive(true);
         Text_Jugabilidad.SetActive(true);
         Text_Idiomas.SetActive(true);
-    }   
+    }
     public void AbrirPanelEspecifico(int indice)
     {
         for (int i = 0; i < todosLosPaneles.Length; i++)
@@ -35,6 +38,14 @@ public class Brillo : MonoBehaviour
             todosLosPaneles[i].SetActive(i == indice);
         }
     }
+    private int[][] resoluciones = new int[][]
+    {
+        new int[]{1280,720},
+        new int[]{1920,1080},
+        new int[]{2560,1440},
+        new int[]{3840,2160}
+
+    };
     void Start()
 
 
@@ -68,37 +79,28 @@ public class Brillo : MonoBehaviour
     }
 
     public void RevisarResolucion()
+   
     {
-        resoluciones = Screen.resolutions;
         resolucionesDropDown.ClearOptions();
-        List<string> opciones = new List<string>();
-        int resolucionActual = 0;
-
-        for (int i= 0; i < resoluciones.Length; i++)
+        var opciones = new System.Collections.Generic.List<string>();
+        foreach (var r in resoluciones)
         {
-            string opcion = resoluciones[i].width + " x " + resoluciones[i].height;
-            opciones.Add(opcion);
-
-
-            if (Screen.fullScreen && resoluciones[i].width == Screen.currentResolution.width &&
-                resoluciones[i].height == Screen.currentResolution.height)
-            { 
-                resolucionActual = i; 
-            }
+            opciones.Add(r[0] + " " + r[1]);
         }
         resolucionesDropDown.AddOptions(opciones);
-        resolucionesDropDown.value = resolucionActual;
+        resolucionesDropDown.value = 0;
         resolucionesDropDown.RefreshShownValue();
-
-        resolucionesDropDown.value = PlayerPrefs.GetInt("numeroResolucion", 0);
     }
-    public void CambiarResolucion(int indiceResolucion) 
+    public void CambiarResolucion(int indiceResolucion)
     {
-       PlayerPrefs.SetInt("numeroResolucion",resolucionesDropDown.value);
-        
-        Resolution resolucion = resoluciones[indiceResolucion];
-        Screen.SetResolution(resolucion.width, resolucion.height, Screen.fullScreen);
+        int ancho = resoluciones[indiceResolucion][0];
+        int alto = resoluciones[indiceResolucion][1];
+
+        FullScreenMode modoActual = Screen.fullScreenMode;
+
+        Screen.SetResolution(ancho, alto, modoActual);
     }
+
     public void CambiarBrillo(float valor)
 
     {
