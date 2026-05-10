@@ -39,15 +39,13 @@ public class Accionadores : MonoBehaviour
     [Header("DropdownResolucion")]
     public TMP_Dropdown miDropdownResolucion;
     public TMP_Text textoValorResolucion;
-    
-   
-    
 
 
 
 
-//Este texto sirve para que el texto del menú cambie automáticamente al nombre del objeto que el jugador ha seleccionado; el !toggle.isOn sirve para dar una comprobacion de que el interrructor esta apagado y return  para que si el toggle esta apagado la función se detenga. TextValor Sirve para que aceda a la proppiedad de la variable que se declara arriba y toggle.gameObject.name  optiene el nombre del objeto en el  Hierachy
-public void leerToggle(Toggle toggle)
+
+    //Este texto sirve para que el texto del menú cambie automáticamente al nombre del objeto que el jugador ha seleccionado; el !toggle.isOn sirve para dar una comprobacion de que el interrructor esta apagado y return  para que si el toggle esta apagado la función se detenga. TextValor Sirve para que aceda a la proppiedad de la variable que se declara arriba y toggle.gameObject.name  optiene el nombre del objeto en el  Hierachy
+    public void leerToggle(Toggle toggle)
     {
         if (!toggle.isOn) return;
         textoValorToggle.text = toggle.gameObject.name;
@@ -96,11 +94,11 @@ public void leerToggle(Toggle toggle)
         float valor = miDropdownResolucion.value;
         textoValorResolucion.text = valor.ToString();
     }
-    
-   
 
 
-   
+
+
+
 }
 
 
