@@ -90,9 +90,12 @@ public class Brillo : MonoBehaviour
         resolucionesDropDown.value = resolucionActual;
         resolucionesDropDown.RefreshShownValue();
 
+        resolucionesDropDown.value = PlayerPrefs.GetInt("numeroResolucion", 0);
     }
     public void CambiarResolucion(int indiceResolucion) 
     {
+       PlayerPrefs.SetInt("numeroResolucion",resolucionesDropDown.value);
+        
         Resolution resolucion = resoluciones[indiceResolucion];
         Screen.SetResolution(resolucion.width, resolucion.height, Screen.fullScreen);
     }
