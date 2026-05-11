@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.VirtualTexturing;
+using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
 public class idiomas : MonoBehaviour
@@ -41,7 +42,7 @@ public class idiomas : MonoBehaviour
     {
        {"CASTELLANO","ÍNGLES","GALLEGO", "IDIOMA","IDIOMAS DEL SISTEMA","JUGABILIDAD","IMAGEN","VOLUMEN","MANDO","BRILLO","RESOLUCIÓN Y TAMAÑO","PREDETERMINADO","SONIDO","MÚSICA","DÍALOGO","FX","DIFICILTAD","RESOLUCION","PANTALLA COMPLETA","FÁCIL","MEDIO","DIFICIL","MUY DIFICIL"},
        {"SPANISH","ENGLISH","GALICIAN", "LANGUAGE","SYSTEM LANGUAGES","GAMEPLAY","IMAGE","VOLUME","CONTROLLER","BRIGHTNESS","RESOLUTION AND SIZE","DEFAULT","SOUND","MUSIC","DIALOG","FX","DIFFICULTY", "RESOLUTION","FULL SCREEN","EASY","MEDIUM","DIFÍCULT", "VERY DIFÍCULT"},
-        {"ESPAÑOL","INGLÉS","GALEGO", "IDIOMA","IDIOMAS DO SISTEMA","XOGO","IMAXE","VOLUME","MANDO","BRILANCIA","RESOLUTION AND SIZE","PREDETERMINADO","SON","MÚSICA","DÍALOGO","FX","DIFICULTADE","RESOLUCIÓN","PANTALLA COMPLETA","FÁCIL", "MEDIO"," DIFÍCIL", "MOI DIFÍCIL"}
+        {"ESPAÑOL","INGLÉS","GALEGO", "IDIOMA","IDIOMAS DO SISTEMA","XOGO","IMAXE","VOLUME","MANDO","BRILANCIA","RESOLUTION AND SIZE","PREDETERMINADO","SON","MúSICA","DÍALOGO","FX","DIFICULTADE","RESOLUCIÓN","PANTALLA COMPLETA","FÁCIL", "MEDIO"," DIFÍCIL", "MOI DIFÍCIL"}
     };
 
     void Start()
@@ -112,7 +113,7 @@ public class idiomas : MonoBehaviour
 
         Debug.Log("Idioma guardado: " + i);
     }
-   
+
 }
 
 

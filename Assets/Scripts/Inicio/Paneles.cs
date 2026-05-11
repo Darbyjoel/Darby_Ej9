@@ -15,13 +15,17 @@ public class Paneles : MonoBehaviour
     public Animator menuTienda;
     public Animator menuSalir;
     public Animator menuCargar;
-    internal Color color;
     public Image Panel_Brillo;
+
     [Header("InputJugadorUno")]
     public TMP_InputField inputJugadorUno;
     public TMP_Text textoInputNombreUsuario;
-    public GameObject Image_Degradado;
-    
+   
+
+    [Header("imputCorreo")]
+    public TMP_InputField CoreeoJugador;
+    public TMP_Text textoCoreeoJugador;
+
 
 
     public void Start()
@@ -32,9 +36,17 @@ public class Paneles : MonoBehaviour
 
         textoInputNombreUsuario.text = nombreGuardado;
         inputJugadorUno.text = nombreGuardado;
-    
+
     }
-    
+    public void CambiarBrillo(float valor) 
+    {
+        Color c = Panel_Brillo.color;
+        c.a = 1f - valor / 10;
+        Panel_Brillo.color = c;
+    }
+
+
+
     //Esto hace que el metodo aparesca en Unity
     public void BotonCambiaAnimacion(int id)
     {
@@ -47,13 +59,7 @@ public class Paneles : MonoBehaviour
         //Estos dos codigos son menus de opciones de tipo switch. Cada caso esta vinculado a un numero que lo vincula con el tipo de animación de entrada y de salida que le correspodenria segun su agrupación y número. Y el break le dice que no se vincule con los demas casos
     }
 
-    public void CambiarBrillo(float valor)
-
-    {
-        Color c = Panel_Brillo.color;
-        c.a = 1f - valor / 10;
-        Panel_Brillo.color = c;
-    }
+   
     public void EntraMenu()
     {
         switch (idAnimacion)
@@ -86,11 +92,7 @@ public class Paneles : MonoBehaviour
                 break; 
         }
     }
-    public void Pantalla_BrilloEntra(GameObject panelAActivar)
-    {
-        Image_Degradado.SetActive(false);
-
-    }
+   
  
     public GameObject[] todosLosPaneles;
 
@@ -108,6 +110,13 @@ public class Paneles : MonoBehaviour
         string texto = inputJugadorUno.text;
         textoInputNombreUsuario.text = texto;
         PlayerPrefs.SetString("NombreJugador", texto);
+        PlayerPrefs.Save();
+    }
+    public void imputCorreo()
+    {
+        string texto = CoreeoJugador.text;
+        textoCoreeoJugador.text = texto;
+        PlayerPrefs.SetString("CorreoJugador", texto);
         PlayerPrefs.Save();
     }
 

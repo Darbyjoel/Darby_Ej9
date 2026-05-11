@@ -95,6 +95,16 @@ public class Accionadores : MonoBehaviour
         textoValorResolucion.text = valor.ToString();
     }
 
+    public void CambiaMenuPrincipal()
+    {
+        SceneManager.LoadScene("MenuJuego");
+     
+            }
+    public void CambioMenuVideo()
+    {
+        SceneManager.LoadScene("EsceneVideo");
+
+    }
 
 
 
