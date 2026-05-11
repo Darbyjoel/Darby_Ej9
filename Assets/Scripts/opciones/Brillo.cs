@@ -20,7 +20,9 @@ public class Brillo : MonoBehaviour
 
     [HeaderAttribute("Cambio de resolución")]
     public TMP_Dropdown resolucionesDropDown;
-  
+
+    //Valor predeterminado para el brillo si para el boton de restaurar
+    private const float Brillo_Predeterminado=100f;
 
     public void Pantalla_BrilloEntra(GameObject panelAActivar)
     {
@@ -52,7 +54,7 @@ public class Brillo : MonoBehaviour
 
 
     {
-        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 100f);
+        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", Brillo_Predeterminado);
         Slider_Brillo.value = brilloGuardado;
 
         CambiarBrillo(brilloGuardado);
@@ -111,11 +113,22 @@ public class Brillo : MonoBehaviour
         PlayerPrefs.Save();
 
     }
+    //restaura las opciones de brillo tomando en cuenta el valor predeterminado que se le dio arriba
+    public void RestaurarBrillo()
+    {
+        Slider_Brillo.value = Brillo_Predeterminado;
+
+        CambiarBrillo(Brillo_Predeterminado);
+
+        PlayerPrefs.SetFloat("Brillo", Brillo_Predeterminado);
+        PlayerPrefs.Save();
+    }
 
 
-    
 
-    
+
+
+
 
 
 

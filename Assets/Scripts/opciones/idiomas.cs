@@ -34,15 +34,19 @@ public class idiomas : MonoBehaviour
     public TextMeshProUGUI Mediotext;
     public TextMeshProUGUI Dificiltext;
     public TextMeshProUGUI MuyDificiltext;
+    public TextMeshProUGUI VolverOptiontext; 
+    public TextMeshProUGUI CreditosOptiontext;
+    public TextMeshProUGUI Restaurartext;
+    public TextMeshProUGUI OpcionesHeadtext;
 
 
 
     private int i = 0;
-    private string[,] matrizIdiomas = new string[3, 23]
+    private string[,] matrizIdiomas = new string[3, 27]
     {
-       {"CASTELLANO","ÍNGLES","GALLEGO", "IDIOMA","IDIOMAS DEL SISTEMA","JUGABILIDAD","IMAGEN","VOLUMEN","MANDO","BRILLO","RESOLUCIÓN Y TAMAÑO","PREDETERMINADO","SONIDO","MÚSICA","DÍALOGO","FX","DIFICILTAD","RESOLUCION","PANTALLA COMPLETA","FÁCIL","MEDIO","DIFICIL","MUY DIFICIL"},
-       {"SPANISH","ENGLISH","GALICIAN", "LANGUAGE","SYSTEM LANGUAGES","GAMEPLAY","IMAGE","VOLUME","CONTROLLER","BRIGHTNESS","RESOLUTION AND SIZE","DEFAULT","SOUND","MUSIC","DIALOG","FX","DIFFICULTY", "RESOLUTION","FULL SCREEN","EASY","MEDIUM","DIFÍCULT", "VERY DIFÍCULT"},
-        {"ESPAÑOL","INGLÉS","GALEGO", "IDIOMA","IDIOMAS DO SISTEMA","XOGO","IMAXE","VOLUME","MANDO","BRILANCIA","RESOLUTION AND SIZE","PREDETERMINADO","SON","MúSICA","DÍALOGO","FX","DIFICULTADE","RESOLUCIÓN","PANTALLA COMPLETA","FÁCIL", "MEDIO"," DIFÍCIL", "MOI DIFÍCIL"}
+       {"CASTELLANO","ÍNGLES","GALLEGO", "IDIOMA","IDIOMAS DEL SISTEMA","JUGABILIDAD","IMAGEN","VOLUMEN","MANDO","BRILLO","RESOLUCIÓN Y TAMAÑO","PREDETERMINADO","SONIDO","MÚSICA","DÍALOGO","FX","DIFICILTAD","RESOLUCION","PANTALLA COMPLETA","FÁCIL","MEDIO","DIFICIL","MUY DIFICIL","VOLVER","CREDITOS","RESTAURAR","OPCIONES"},
+       {"SPANISH","ENGLISH","GALICIAN", "LANGUAGE","SYSTEM LANGUAGES","GAMEPLAY","IMAGE","VOLUME","CONTROLLER","BRIGHTNESS","RESOLUTION AND SIZE","DEFAULT","SOUND","MUSIC","DIALOG","FX","DIFFICULTY", "RESOLUTION","FULL SCREEN","EASY","MEDIUM","DIFÍCULT", "VERY DIFÍCULT","BACK", "CREDITS", "RESTORE", "OPTIONS" },
+        {"ESPAÑOL","INGLÉS","GALEGO", "IDIOMA","IDIOMAS DO SISTEMA","XOGO","IMAXE","VOLUME","MANDO","BRILANCIA","RESOLUTION AND SIZE","PREDETERMINADO","SON","MúSICA","DÍALOGO","FX","DIFICULTADE","RESOLUCIÓN","PANTALLA COMPLETA","FÁCIL", "MEDIO","DIFÍCIL", "MOI DIFICIL","VOLVER", "CREDITOS", "RESTAURAR", "OPCIONS"}
     };
 
     void Start()
@@ -79,6 +83,10 @@ public class idiomas : MonoBehaviour
         Mediotext.text = matrizIdiomas[i, 20];
         Dificiltext.text = matrizIdiomas[i, 21];
         MuyDificiltext.text = matrizIdiomas[i, 22];
+        VolverOptiontext.text = matrizIdiomas[i, 23];
+        CreditosOptiontext.text = matrizIdiomas[i, 24];
+        Restaurartext.text = matrizIdiomas[i, 25];
+        OpcionesHeadtext.text = matrizIdiomas[i, 26];
 
     }
     public void Espanol()
