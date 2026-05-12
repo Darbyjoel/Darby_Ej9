@@ -323,18 +323,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 1143316058}
+    m_SelectOnDown: {fileID: 184676714}
+    m_SelectOnLeft: {fileID: 1422928197}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1293,7 +1293,7 @@ RectTransform:
   m_GameObject: {fileID: 123774611}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 20.646}
-  m_LocalScale: {x: 0.32005513, y: 0.6062369, z: 0.3843784}
+  m_LocalScale: {x: 0.32005513, y: 0.50013936, z: 0.3843784}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1901318322}
@@ -1301,7 +1301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 212.37, y: -100}
+  m_AnchoredPosition: {x: 212.37, y: -92}
   m_SizeDelta: {x: 968, y: 233}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &123774613
@@ -1355,7 +1355,7 @@ GameObject:
   - component: {fileID: 124146785}
   - component: {fileID: 124146784}
   m_Layer: 5
-  m_Name: BotonPausa
+  m_Name: BotonCaptura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1396,18 +1396,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 1822900885}
+    m_SelectOnDown: {fileID: 1179859673}
+    m_SelectOnLeft: {fileID: 440787634}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1974,7 +1974,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 2075446431}
     m_SelectOnDown: {fileID: 928001800}
     m_SelectOnLeft: {fileID: 1822900885}
     m_SelectOnRight: {fileID: 1205445706}
@@ -2435,18 +2435,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 27139955}
+    m_SelectOnDown: {fileID: 947856187}
+    m_SelectOnLeft: {fileID: 877739655}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2648,7 +2648,7 @@ MonoBehaviour:
   MuyDificiltext: {fileID: 1033965796}
   VolverOptiontext: {fileID: 1097618280}
   CreditosOptiontext: {fileID: 1268204639}
-  Restaurartext: {fileID: 490071260}
+  Restaurartext: {fileID: 1435597336}
   OpcionesHeadtext: {fileID: 1901318323}
 --- !u!1 &201201455
 GameObject:
@@ -2906,7 +2906,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1180196842}
+    m_SelectOnUp: {fileID: 184676714}
     m_SelectOnDown: {fileID: 1544461566}
     m_SelectOnLeft: {fileID: 947856187}
     m_SelectOnRight: {fileID: 0}
@@ -3143,7 +3143,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 1404775448}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 2075446431}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3894,8 +3894,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2145612279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5256,7 +5256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360027079}
   m_Layer: 0
-  m_Name: Resolution_Group
+  m_Name: Grupo_Dificultad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5426,8 +5426,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 2075446431}
+    m_SelectOnDown: {fileID: 882949517}
     m_SelectOnLeft: {fileID: 1205445706}
     m_SelectOnRight: {fileID: 1822900885}
   m_Transition: 2
@@ -5692,18 +5692,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1180196842}
+    m_SelectOnDown: {fileID: 2075446431}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0.84313726, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.84313726, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6152,7 +6152,7 @@ GameObject:
   - component: {fileID: 440787635}
   - component: {fileID: 440787634}
   m_Layer: 5
-  m_Name: BotonCompartir
+  m_Name: BotonPausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6193,18 +6193,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1822900885}
+    m_SelectOnDown: {fileID: 1281343738}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 124146784}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6664,7 +6664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.90588236, g: 0.6509804, b: 0.2901961, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8164,7 +8164,7 @@ RectTransform:
   m_Father: {fileID: 1088513268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8294,7 +8294,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 947856187}
-    m_SelectOnDown: {fileID: 882949517}
+    m_SelectOnDown: {fileID: 2075446431}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 1544461566}
   m_Transition: 1
@@ -8604,7 +8604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &670472208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9279,8 +9279,8 @@ RectTransform:
   m_Children:
   - {fileID: 670472208}
   - {fileID: 1613736587}
-  - {fileID: 1765620763}
   - {fileID: 1955767271}
+  - {fileID: 1765620763}
   m_Father: {fileID: 30599557}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10179,18 +10179,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1422928197}
+    m_SelectOnDown: {fileID: 947856187}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 184676714}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10433,8 +10433,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1544461566}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 373269652}
+    m_SelectOnDown: {fileID: 1123206512}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -11427,7 +11427,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1180196842}
+    m_SelectOnUp: {fileID: 877739655}
     m_SelectOnDown: {fileID: 632221010}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 210655356}
@@ -11540,7 +11540,7 @@ RectTransform:
   m_Father: {fileID: 1589224055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11757,7 +11757,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1020234562}
   - component: {fileID: 1020234563}
-  - component: {fileID: 1020234564}
   m_Layer: 0
   m_Name: SliderMusica
   m_TagString: Untagged
@@ -11843,7 +11842,7 @@ MonoBehaviour:
       - m_Target: {fileID: 186312999}
         m_TargetAssemblyTypeName: Accionadores, Assembly-CSharp
         m_MethodName: LeerImputMusica
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11852,31 +11851,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1020234564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020234561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa25df5185365814bb1e68b7e149d870, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Accionadores
-  textoValorToggle: {fileID: 0}
-  sliderMusica: {fileID: 0}
-  textoValorMusica: {fileID: 0}
-  sliderDialogos: {fileID: 0}
-  textoValorDialogos: {fileID: 0}
-  sliderFx: {fileID: 0}
-  textoValorFx: {fileID: 0}
-  sliderBrillo: {fileID: 0}
-  textoValorBrillo: {fileID: 0}
-  miDropdownDificultad: {fileID: 0}
-  textoValorDificultad: {fileID: 0}
-  miDropdownResolucion: {fileID: 0}
-  textoValorResolucion: {fileID: 0}
 --- !u!1 &1021665636
 GameObject:
   m_ObjectHideFlags: 0
@@ -12172,7 +12146,7 @@ GameObject:
   - component: {fileID: 1071380386}
   - component: {fileID: 1071380387}
   m_Layer: 0
-  m_Name: Panel_Acessivilidad
+  m_Name: Panel_Resoluccion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13042,7 +13016,7 @@ GameObject:
   - component: {fileID: 1123206513}
   - component: {fileID: 1123206512}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button_Restaurar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13081,18 +13055,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 882949517}
+    m_SelectOnDown: {fileID: 1180196842}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.8431373, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 0.84313726, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.8431373, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13464,18 +13438,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 1179859673}
+    m_SelectOnDown: {fileID: 27139955}
+    m_SelectOnLeft: {fileID: 1907225014}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14391,18 +14365,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 124146784}
+    m_SelectOnDown: {fileID: 1143316058}
+    m_SelectOnLeft: {fileID: 1281343738}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14517,8 +14491,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1748380497}
-    m_SelectOnDown: {fileID: 947856187}
+    m_SelectOnUp: {fileID: 1123206512}
+    m_SelectOnDown: {fileID: 374519926}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -15015,7 +14989,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 2075446431}
     m_SelectOnDown: {fileID: 1020234563}
     m_SelectOnLeft: {fileID: 153219615}
     m_SelectOnRight: {fileID: 373269652}
@@ -15127,7 +15101,7 @@ RectTransform:
   m_Father: {fileID: 352037129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16004,7 +15978,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281343736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000003882645}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1.1500003, y: 1.15, z: 1.15}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -16031,18 +16005,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 440787634}
+    m_SelectOnDown: {fileID: 1907225014}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1179859673}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -17407,18 +17381,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1907225014}
+    m_SelectOnDown: {fileID: 877739655}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 27139955}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -17964,7 +17938,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 210655356}
-    m_SelectOnDown: {fileID: 882949517}
+    m_SelectOnDown: {fileID: 1636531509}
     m_SelectOnLeft: {fileID: 632221010}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -18366,8 +18340,8 @@ RectTransform:
   - {fileID: 301089941}
   - {fileID: 882949516}
   - {fileID: 1933763572}
-  - {fileID: 1071380386}
   - {fileID: 1123206511}
+  - {fileID: 1071380386}
   m_Father: {fileID: 822532186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -18637,7 +18611,7 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 1205445706}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 2075446431}
     m_SelectOnRight: {fileID: 2075446431}
   m_Transition: 1
   m_Colors:
@@ -20025,7 +19999,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 254448325}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 2075446431}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -20122,7 +20096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.92156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20273,7 +20247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1765620763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20852,8 +20826,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 2075446431}
+    m_SelectOnDown: {fileID: 440787634}
     m_SelectOnLeft: {fileID: 373269652}
     m_SelectOnRight: {fileID: 153219615}
   m_Transition: 2
@@ -21606,14 +21580,14 @@ RectTransform:
   m_GameObject: {fileID: 1901318321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.6819932, y: 2.1302593, z: 3.3598192}
+  m_LocalScale: {x: 3.681993, y: 2.5821638, z: 3.3598192}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123774612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 124.87, y: -35}
+  m_AnchoredPosition: {x: 124.87005, y: -58.420208}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1901318323
@@ -21896,18 +21870,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1281343738}
+    m_SelectOnDown: {fileID: 1422928197}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1143316058}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.75686276, g: 0.59607846, b: 0.2784314, a: 1}
+    m_SelectedColor: {r: 0.7568628, g: 0.59607846, b: 0.2784314, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -22370,7 +22344,7 @@ RectTransform:
   m_Father: {fileID: 757617234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23283,7 +23257,7 @@ MonoBehaviour:
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 1205445706}
     m_SelectOnLeft: {fileID: 1636531509}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1636531509}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23705,7 +23679,7 @@ RectTransform:
   m_Father: {fileID: 910117060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
