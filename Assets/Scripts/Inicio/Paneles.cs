@@ -26,6 +26,12 @@ public class Paneles : MonoBehaviour
     public TMP_InputField CoreeoJugador;
     public TMP_Text textoCoreeoJugador;
 
+    [Header("CargarPartida")]
+    public Toggle PalomaPartidaUno;
+    public Toggle PalomaPartidaDos;
+    public Toggle PalomaPartidaTres;
+    public Toggle PalomaPartidaCuatro;
+    
 
 
     public void Start()
@@ -36,6 +42,12 @@ public class Paneles : MonoBehaviour
 
         textoInputNombreUsuario.text = nombreGuardado;
         inputJugadorUno.text = nombreGuardado;
+        int casillaGuardada = PlayerPrefs.GetInt("CargarActiva", 0);
+
+        PalomaPartidaUno.isOn = (casillaGuardada == 1);
+        PalomaPartidaDos.isOn = (casillaGuardada == 2);
+        PalomaPartidaTres.isOn = (casillaGuardada == 3);
+        PalomaPartidaCuatro.isOn = (casillaGuardada == 4);
 
     }
     public void CambiarBrillo(float valor) 
@@ -103,6 +115,32 @@ public class Paneles : MonoBehaviour
 
             todosLosPaneles[i].SetActive(i == indice);
         }
+    }
+
+    
+    public void ActivarPajaroUno()
+    {
+        PalomaPartidaUno.isOn = true;
+        PlayerPrefs.SetInt("CargarActiva", 1);
+        PlayerPrefs.Save();
+    }
+    public void ActivarPajaroDos()
+    {
+        PalomaPartidaDos.isOn = true;
+        PlayerPrefs.SetInt("CargarActiva", 2);
+        PlayerPrefs.Save();
+    }
+    public void ActivarPajaroTres()
+    {
+        PalomaPartidaTres.isOn = true;
+        PlayerPrefs.SetInt("CargarActiva", 3);
+        PlayerPrefs.Save();
+    }
+    public void ActivarPajaroCuatro()
+    {
+        PalomaPartidaCuatro.isOn = true;
+        PlayerPrefs.SetInt("CargarActiva", 4);
+        PlayerPrefs.Save();
     }
 
     public void LeerInputJugadorUno()

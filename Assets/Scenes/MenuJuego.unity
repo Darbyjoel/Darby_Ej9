@@ -147,12 +147,12 @@ RectTransform:
   m_GameObject: {fileID: 13796323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2476356, y: 2.1498115, z: 1.4525714}
+  m_LocalScale: {x: 2.2476356, y: 2.1498117, z: 1.4525714}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1451077277}
   - {fileID: 812358274}
-  m_Father: {fileID: 1970790854}
+  m_Father: {fileID: 280363894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 136063928}
+    m_SelectOnDown: {fileID: 420590924}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -202,7 +202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 13796326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167777884}
+        m_TargetAssemblyTypeName: Paneles, Assembly-CSharp
+        m_MethodName: ActivarPajaroTres
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &13796326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +542,7 @@ RectTransform:
   m_GameObject: {fileID: 93109788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.77021, y: 0.77021, z: 0.77021}
+  m_LocalScale: {x: 1.0765225, y: 1.0765225, z: 1.0765225}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1047864112}
@@ -833,12 +845,12 @@ RectTransform:
   m_GameObject: {fileID: 136063926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2476356, y: 2.1498115, z: 1.4525714}
+  m_LocalScale: {x: 2.2476356, y: 2.1498117, z: 1.4525714}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 696016995}
   - {fileID: 1014617324}
-  m_Father: {fileID: 1970790854}
+  m_Father: {fileID: 280363894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -858,10 +870,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1644609812}
+    m_SelectOnDown: {fileID: 13796325}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -888,7 +900,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 136063929}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167777884}
+        m_TargetAssemblyTypeName: Paneles, Assembly-CSharp
+        m_MethodName: ActivarPajaroDos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &136063929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +1005,10 @@ MonoBehaviour:
   textoInputNombreUsuario: {fileID: 709215888}
   CoreeoJugador: {fileID: 2112554366}
   textoCoreeoJugador: {fileID: 1913933667}
+  PalomaPartidaUno: {fileID: 1662037012}
+  PalomaPartidaDos: {fileID: 1014617325}
+  PalomaPartidaTres: {fileID: 812358275}
+  PalomaPartidaCuatro: {fileID: 677621180}
   todosLosPaneles: []
 --- !u!114 &167777886
 MonoBehaviour:
@@ -1038,7 +1066,6 @@ MonoBehaviour:
   VolverSalirCargarText: {fileID: 919513698}
   TiendaHeadText: {fileID: 2141384867}
   UpssText: {fileID: 1882374830}
-  "Para\xEDnformacionText": {fileID: 1882374830}
   NombreText: {fileID: 910198865}
   VolverText: {fileID: 268441283}
 --- !u!1 &169491243
@@ -1924,6 +1951,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272531311}
   m_CullTransparentMesh: 1
+--- !u!1 &280363893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280363894}
+  - component: {fileID: 280363895}
+  m_Layer: 5
+  m_Name: ToggleGropu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &280363894
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280363893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1644609811}
+  - {fileID: 136063927}
+  - {fileID: 13796324}
+  - {fileID: 420590923}
+  m_Father: {fileID: 1970790854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &280363895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280363893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
+  m_AllowSwitchOff: 0
 --- !u!1 &303125471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,12 +2622,12 @@ RectTransform:
   m_GameObject: {fileID: 420590922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2476356, y: 2.1498115, z: 1.4525714}
+  m_LocalScale: {x: 2.2476356, y: 2.1498117, z: 1.4525714}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238446484}
   - {fileID: 677621179}
-  m_Father: {fileID: 1970790854}
+  m_Father: {fileID: 280363894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2567,10 +2647,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 13796325}
+    m_SelectOnDown: {fileID: 916460939}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2597,7 +2677,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 420590925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167777884}
+        m_TargetAssemblyTypeName: Paneles, Assembly-CSharp
+        m_MethodName: ActivarPajaroCuatro
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &420590925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4273,7 +4365,7 @@ GameObject:
   - component: {fileID: 677621179}
   - component: {fileID: 677621180}
   m_Layer: 5
-  m_Name: Check
+  m_Name: CheckCuatro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4342,11 +4434,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1685359656}
   toggleTransition: 1
   graphic: {fileID: 1120390893}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 280363895}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &682087682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5453,7 +5545,7 @@ GameObject:
   - component: {fileID: 812358274}
   - component: {fileID: 812358275}
   m_Layer: 5
-  m_Name: Check (1)
+  m_Name: CheckTres
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5522,11 +5614,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711775974}
   toggleTransition: 1
   graphic: {fileID: 1525649228}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 280363895}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &821956622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,7 +6423,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 1644609812}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 1633174082}
     m_SelectOnRight: {fileID: 0}
@@ -6360,21 +6452,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1235965235}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: 167777884}
+        m_TargetAssemblyTypeName: Paneles, Assembly-CSharp
+        m_MethodName: SalirMenu
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 6cd5374d6407b784f86bf91115da8dc3, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 167777884}
-        m_TargetAssemblyTypeName: Paneles, Assembly-CSharp
-        m_MethodName: SalirMenu
+      - m_Target: {fileID: 248394434}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6649,7 +6741,7 @@ MonoBehaviour:
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 660030198}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 2112554366}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -7039,7 +7131,7 @@ GameObject:
   - component: {fileID: 1014617324}
   - component: {fileID: 1014617325}
   m_Layer: 5
-  m_Name: Check (2)
+  m_Name: CheckDos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7108,11 +7200,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1337631982}
   toggleTransition: 1
   graphic: {fileID: 503165396}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 280363895}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &1014668839
 GameObject:
   m_ObjectHideFlags: 0
@@ -11571,7 +11663,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 1856664750}
+    m_SelectOnUp: {fileID: 1644609812}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 916460939}
@@ -11723,12 +11815,12 @@ RectTransform:
   m_GameObject: {fileID: 1644609810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2476356, y: 2.1498115, z: 1.4525714}
+  m_LocalScale: {x: 2.2476356, y: 2.1498117, z: 1.4525714}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 369319696}
   - {fileID: 1662037011}
-  m_Father: {fileID: 1970790854}
+  m_Father: {fileID: 280363894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11748,10 +11840,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 136063928}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -11778,7 +11870,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1644609813}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167777884}
+        m_TargetAssemblyTypeName: Paneles, Assembly-CSharp
+        m_MethodName: ActivarPajaroUno
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1644609813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11866,7 +11970,7 @@ GameObject:
   - component: {fileID: 1662037011}
   - component: {fileID: 1662037012}
   m_Layer: 5
-  m_Name: Check (3)
+  m_Name: CheckUno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11935,11 +12039,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 524124603}
   toggleTransition: 1
   graphic: {fileID: 445191044}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 280363895}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &1677589953
 GameObject:
   m_ObjectHideFlags: 0
@@ -13559,7 +13663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -90, y: -237}
+  m_AnchoredPosition: {x: -90, y: -235}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882374830
@@ -14019,10 +14123,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 0.925, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 420590923}
-  - {fileID: 13796324}
-  - {fileID: 136063927}
-  - {fileID: 1644609811}
+  - {fileID: 280363894}
   - {fileID: 1633174081}
   - {fileID: 916460938}
   m_Father: {fileID: 1542233897}
@@ -15274,7 +15375,7 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 660030198}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 933655970}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
