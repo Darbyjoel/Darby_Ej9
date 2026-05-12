@@ -2580,12 +2580,11 @@ MonoBehaviour:
   textoValorDialogos: {fileID: 2088173156}
   sliderFx: {fileID: 1748380497}
   textoValorFx: {fileID: 309654905}
-  sliderBrillo: {fileID: 882949517}
-  textoValorBrillo: {fileID: 301089939}
-  miDropdownDificultad: {fileID: 1180196842}
-  textoValorDificultad: {fileID: 851432721}
-  miDropdownResolucion: {fileID: 440787634}
-  textoValorResolucion: {fileID: 1340669516}
+  ToggleDificil:
+  - {fileID: 947856187}
+  - {fileID: 632221010}
+  - {fileID: 210655356}
+  - {fileID: 1544461566}
 --- !u!114 &186313000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2939,13 +2938,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 186312999}
-        m_TargetAssemblyTypeName: ImputField, Assembly-CSharp
-        m_MethodName: LeerToggle2
-        m_Mode: 5
+        m_TargetAssemblyTypeName: Accionadores, Assembly-CSharp
+        m_MethodName: LeerToggleDificultad
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: DIFICIL
           m_BoolArgument: 0
@@ -8326,13 +8325,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 186312999}
-        m_TargetAssemblyTypeName: ImputField, Assembly-CSharp
-        m_MethodName: LeerToggle2
-        m_Mode: 5
+        m_TargetAssemblyTypeName: Accionadores, Assembly-CSharp
+        m_MethodName: LeerToggleDificultad
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 'MEDIO '
           m_BoolArgument: 0
@@ -11461,8 +11460,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 186312999}
         m_TargetAssemblyTypeName: Accionadores, Assembly-CSharp
-        m_MethodName: LeerToggle2
-        m_Mode: 5
+        m_MethodName: LeerToggleDificultad
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11471,7 +11470,7 @@ MonoBehaviour:
           m_StringArgument: "F\xC1CIL"
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &952933405
 GameObject:
   m_ObjectHideFlags: 0
@@ -17970,13 +17969,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 186312999}
-        m_TargetAssemblyTypeName: ImputField, Assembly-CSharp
-        m_MethodName: LeerToggle2
-        m_Mode: 5
+        m_TargetAssemblyTypeName: Accionadores, Assembly-CSharp
+        m_MethodName: LeerToggleDificultad
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: MUY DIFICIL
           m_BoolArgument: 0

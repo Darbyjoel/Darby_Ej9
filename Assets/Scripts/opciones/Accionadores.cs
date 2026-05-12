@@ -27,21 +27,19 @@ public class Accionadores : MonoBehaviour
     public Slider sliderFx;
     public TMP_Text textoValorFx;
 
-    [Header("sliderBrillo")]
-    public Slider sliderBrillo;
-    public TMP_Text textoValorBrillo;
+    [Header("ToggleDificultad")]
+    public Toggle [] ToggleDificil;
 
-    //Con Public hacemos la variable visible para desde afuera del script, con Dropdown le señalo que el componente es de tipo Dropdown y con con tmp_text sirve parapara referenciar a un componente textmeshpro. Lo hice para un boton de dificultad y el de Resolución
-    [Header("DropdownDificultad")]
-    public TMP_Dropdown miDropdownDificultad;
-    public TMP_Text textoValorDificultad;
-
-    [Header("DropdownResolucion")]
-    public TMP_Dropdown miDropdownResolucion;
-    public TMP_Text textoValorResolucion;
-
-
-
+    public void Start()
+    {
+      int dificultadGuardada =
+      PlayerPrefs.GetInt("ToggleDificultad", 0);
+        if (ToggleDificil.Length > dificultadGuardada)
+            {
+                ToggleDificil[dificultadGuardada].isOn = true;
+            }
+        
+    }
 
 
     //Este texto sirve para que el texto del menú cambie automáticamente al nombre del objeto que el jugador ha seleccionado; el !toggle.isOn sirve para dar una comprobacion de que el interrructor esta apagado y return  para que si el toggle esta apagado la función se detenga. TextValor Sirve para que aceda a la proppiedad de la variable que se declara arriba y toggle.gameObject.name  optiene el nombre del objeto en el  Hierachy
@@ -72,28 +70,23 @@ public class Accionadores : MonoBehaviour
         float valor = sliderDialogos.value;
         textoValorDialogos.text = valor.ToString();
     }
-    public void LeerImputBrillo()
-    {
-        float valor = sliderBrillo.value;
-        textoValorBrillo.text = valor.ToString();
-    }
-    
+
+
     public void LeerImputFx()
     {
         float valor = sliderFx.value;
         textoValorFx.text = valor.ToString();
     }
-    //Aqui vinculamos el textmeshpro con Dropdown haciendo que opció selecionada en el Dropdown se proyecte en el textmeshpro vinculado; lo use para crear un boton de dificultad.
-    public void LeerDropdownDificultad()
+    //simplifico las palomas y las guardo
+    public void LeerToggleDificultad(int indice)
+   
     {
-        float valor = miDropdownDificultad.value;
-        textoValorDificultad.text = valor.ToString();
+        
+        PlayerPrefs.SetInt("ToggleDificultad", indice);
+
+        PlayerPrefs.Save();
     }
-    public void LeerDropdown()
-    {
-        float valor = miDropdownResolucion.value;
-        textoValorResolucion.text = valor.ToString();
-    }
+
 
     public void CambiaMenuPrincipal()
     {
