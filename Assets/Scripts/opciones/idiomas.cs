@@ -22,7 +22,6 @@ public class idiomas : MonoBehaviour
     public TextMeshProUGUI MandoText;
     public TextMeshProUGUI BrilloText;
     public TextMeshProUGUI ResolucionTamañoText;
-    public TextMeshProUGUI PredeterminadoText;
     public TextMeshProUGUI SonidoText;
     public TextMeshProUGUI MusicaText;
     public TextMeshProUGUI DialogosText;
@@ -42,11 +41,11 @@ public class idiomas : MonoBehaviour
 
 
     private int i = 0;
-    private string[,] matrizIdiomas = new string[3, 27]
+    private string[,] matrizIdiomas = new string[3, 26]
     {
-       {"CASTELLANO","ÍNGLES","GALLEGO", "IDIOMA","IDIOMAS DEL SISTEMA","JUGABILIDAD","IMAGEN","VOLUMEN","MANDO","BRILLO","RESOLUCIÓN Y TAMAÑO","PREDETERMINADO","SONIDO","MÚSICA","DÍALOGO","FX","DIFICILTAD","RESOLUCION","PANTALLA COMPLETA","FÁCIL","MEDIO","DIFICIL","MUY DIFICIL","VOLVER","CREDITOS","RESTAURAR","OPCIONES"},
-       {"SPANISH","ENGLISH","GALICIAN", "LANGUAGE","SYSTEM LANGUAGES","GAMEPLAY","IMAGE","VOLUME","CONTROLLER","BRIGHTNESS","RESOLUTION AND SIZE","DEFAULT","SOUND","MUSIC","DIALOG","FX","DIFFICULTY", "RESOLUTION","FULL SCREEN","EASY","MEDIUM","DIFÍCULT", "VERY DIFÍCULT","BACK", "CREDITS", "RESTORE", "OPTIONS" },
-        {"ESPAÑOL","INGLÉS","GALEGO", "IDIOMA","IDIOMAS DO SISTEMA","XOGO","IMAXE","VOLUME","MANDO","BRILANCIA","RESOLUTION AND SIZE","PREDETERMINADO","SON","MÚSICA","DÍALOGO","FX","DIFICULTADE","RESOLUCIÓN","PANTALLA COMPLETA","FÁCIL", "MEDIO","DIFÍCIL", "MOI DIFICIL","VOLVER", "CREDITOS", "RESTAURAR", "OPCIONS"}
+       {"CASTELLANO","ÍNGLES","GALLEGO", "IDIOMA","IDIOMAS DEL SISTEMA","JUGABILIDAD","IMAGEN","VOLUMEN","MANDO","BRILLO","RESOLUCIÓN Y TAMAÑO","SONIDO","MÚSICA","DÍALOGO","FX","DIFICILTAD","RESOLUCION","PANTALLA COMPLETA","FÁCIL","MEDIO","DIFICIL","MUY DIFICIL","VOLVER","CREDITOS","RESTAURAR","OPCIONES"},
+       {"SPANISH","ENGLISH","GALICIAN", "LANGUAGE","SYSTEM LANGUAGES","GAMEPLAY","IMAGE","VOLUME","CONTROLLER","BRIGHTNESS","RESOLUTION AND SIZE","SOUND","MUSIC","DIALOG","FX","DIFFICULTY", "RESOLUTION","FULL SCREEN","EASY","MEDIUM","DIFÍCULT", "VERY DIFÍCULT","BACK", "CREDITS", "RESTORE", "OPTIONS" },
+        {"ESPAÑOL","INGLÉS","GALEGO", "IDIOMA","IDIOMAS DO SISTEMA","XOGO","IMAXE","VOLUME","MANDO","BRILANCIA","RESOLUTION AND SIZE","SON","MÚSICA","DÍALOGO","FX","DIFICULTADE","RESOLUCIÓN","PANTALLA COMPLETA","FÁCIL", "MEDIO","DIFÍCIL", "MOI DIFICIL","VOLVER", "CREDITOS", "RESTAURAR", "OPCIONS"}
     };
 
     void Start()
@@ -71,22 +70,21 @@ public class idiomas : MonoBehaviour
         MandoText.text = matrizIdiomas[i, 8];
         BrilloText.text = matrizIdiomas[i, 9];
         ResolucionTamañoText.text = matrizIdiomas[i, 10];
-        PredeterminadoText.text = matrizIdiomas[i, 11];
-        SonidoText.text = matrizIdiomas[i, 12];
-        MusicaText.text = matrizIdiomas[i, 13];
-        DialogosText.text = matrizIdiomas[i, 14];
-        FxText.text = matrizIdiomas[i, 15];
-        DificultadText.text = matrizIdiomas[i, 16];
-        Resoluciontext.text = matrizIdiomas[i, 17];
-        PantallaCompletatext.text = matrizIdiomas[i, 18];
-        failtext.text = matrizIdiomas[i, 19];
-        Mediotext.text = matrizIdiomas[i, 20];
-        Dificiltext.text = matrizIdiomas[i, 21];
-        MuyDificiltext.text = matrizIdiomas[i, 22];
-        VolverOptiontext.text = matrizIdiomas[i, 23];
-        CreditosOptiontext.text = matrizIdiomas[i, 24];
-        Restaurartext.text = matrizIdiomas[i, 25];
-        OpcionesHeadtext.text = matrizIdiomas[i, 26];
+        SonidoText.text = matrizIdiomas[i, 11];
+        MusicaText.text = matrizIdiomas[i, 12];
+        DialogosText.text = matrizIdiomas[i, 13];
+        FxText.text = matrizIdiomas[i, 14];
+        DificultadText.text = matrizIdiomas[i, 15];
+        Resoluciontext.text = matrizIdiomas[i, 16];
+        PantallaCompletatext.text = matrizIdiomas[i, 17];
+        failtext.text = matrizIdiomas[i, 18];
+        Mediotext.text = matrizIdiomas[i, 19];
+        Dificiltext.text = matrizIdiomas[i, 20];
+        MuyDificiltext.text = matrizIdiomas[i, 21];
+        VolverOptiontext.text = matrizIdiomas[i, 22];
+        CreditosOptiontext.text = matrizIdiomas[i, 23];
+        Restaurartext.text = matrizIdiomas[i, 24];
+        OpcionesHeadtext.text = matrizIdiomas[i, 25];
 
     }
     public void Espanol()
