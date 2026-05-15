@@ -134,8 +134,6 @@ public class iDIOMA_iNICIO: MonoBehaviour
 
         // 3. Actualizamos los textos visuales
         ActualizarTextos();
-
-        Debug.Log("Idioma guardado: " + i);
     }
   
 

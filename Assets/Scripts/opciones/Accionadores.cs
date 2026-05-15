@@ -45,7 +45,7 @@ public class Accionadores : MonoBehaviour
                 if (toggle != null)
                 {
                     toggle.isOn = true;
-                    Debug.Log("Restaurada visualmente la dificultad: " + guardado);
+                    Debug.Log("dificultad: " + guardado);
                 }
             }
         }

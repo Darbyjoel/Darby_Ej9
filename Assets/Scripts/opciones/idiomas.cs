@@ -117,7 +117,7 @@ public class idiomas : MonoBehaviour
         //Actualizamos los textos visuales
         ActualizarTextos();
 
-        Debug.Log("Idioma guardado: " + i);
+        
     }
 
 }

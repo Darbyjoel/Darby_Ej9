@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 
@@ -31,6 +32,9 @@ public class Paneles : MonoBehaviour
     public Toggle PalomaPartidaDos;
     public Toggle PalomaPartidaTres;
     public Toggle PalomaPartidaCuatro;
+
+
+    public AudioMixer mixerMenuPricipal;
     
 
 
@@ -43,11 +47,18 @@ public class Paneles : MonoBehaviour
         textoInputNombreUsuario.text = nombreGuardado;
         inputJugadorUno.text = nombreGuardado;
         int casillaGuardada = PlayerPrefs.GetInt("CargarActiva", 0);
+       
+        
 
         PalomaPartidaUno.isOn = (casillaGuardada == 1);
         PalomaPartidaDos.isOn = (casillaGuardada == 2);
         PalomaPartidaTres.isOn = (casillaGuardada == 3);
         PalomaPartidaCuatro.isOn = (casillaGuardada == 4);
+
+        float volumenGuardado = PlayerPrefs.GetFloat("Menu_opciones", 1F);
+        CambiarVolumenMusica(volumenGuardado);
+        
+
 
     }
     public void CambiarBrillo(float valor) 
@@ -123,24 +134,28 @@ public class Paneles : MonoBehaviour
         PalomaPartidaUno.isOn = true;
         PlayerPrefs.SetInt("CargarActiva", 1);
         PlayerPrefs.Save();
+        VerificarPalomaActiva();
     }
     public void ActivarPajaroDos()
     {
         PalomaPartidaDos.isOn = true;
         PlayerPrefs.SetInt("CargarActiva", 2);
         PlayerPrefs.Save();
+        VerificarPalomaActiva();
     }
     public void ActivarPajaroTres()
     {
         PalomaPartidaTres.isOn = true;
         PlayerPrefs.SetInt("CargarActiva", 3);
         PlayerPrefs.Save();
+        VerificarPalomaActiva();
     }
     public void ActivarPajaroCuatro()
     {
         PalomaPartidaCuatro.isOn = true;
         PlayerPrefs.SetInt("CargarActiva", 4);
         PlayerPrefs.Save();
+        VerificarPalomaActiva();
     }
 
     public void LeerInputJugadorUno()
@@ -149,6 +164,15 @@ public class Paneles : MonoBehaviour
         textoInputNombreUsuario.text = texto;
         PlayerPrefs.SetString("NombreJugador", texto);
         PlayerPrefs.Save();
+        VerificarPalomaActiva();
+    }
+    private void VerificarPalomaActiva()
+    {
+        int activa = PlayerPrefs.GetInt("CargarActiva", 0);
+        if (activa != 0)
+        {
+            UnityEngine.Debug.Log("Partida cargada" + activa);
+        }
     }
     public void imputCorreo()
     {
@@ -166,8 +190,15 @@ public class Paneles : MonoBehaviour
             Salir();
         }
     }
+    void CambiarVolumenMusica(float valor)
+    {
+        if (valor < 0.001f) valor = 0.0001f;
+        float dB = Mathf.Log10(valor) * 20f;
+        mixerMenuPricipal.SetFloat("Menu_opciones", dB);
+       
+    }
 
-   public void Salir()
+    public void Salir()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
